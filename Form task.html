@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task about Form</title>
+</head>
+<body>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create Account</h1><hr> 
+        <!--Without using css , we can use this to give one space for one &nbsp-->
+    <form action="/submit" method="post">
+        <label for="firstname">First name*</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        <label for="lastname">Last name*</label><br>
+        <input type="text" name="firstname" id="firstname" placeholder="enter your first name" required>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="lastname" id="lastname" placeholder="enter your last name" required><br><br>
+
+        <label for="email">Email*</label><br>
+        <input type="email" name="email" id="email" placeholder="enter your mail" required><br><br>
+
+        <label for="password">Password*</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="confirmpassword">Confirm Password*</label><br>
+
+        <input type="password" name="password" id="password" placeholder="enter your password" required>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="password" name="confirmpassword" id="confirmpassword" size="30" placeholder="enter your confirm password" required><br><br>
+
+        <label for="">Gender:</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="">Hobbies:</label><br>
+
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="reading" name="Hobbies[]" value="Reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="sports" name="Hobbies[]" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="travel" name="Hobbies[]" value="travel">
+        <label for="travel">Travel</label>
+
+        <input type="checkbox" id="music" name="Hobbies[]" value="music">
+        <label for="music">Music</label><br><br>
+
+        <label for="sourceofincome">Source of income</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="income">Income</label><br>
+        <select name="sourceofincome" id="sourceofincome">
+            <option value="employed">Employed</option>
+            <option value="self-employed">Self-Employed</option>
+        </select><br><br>
+
+  
+        <label for="file">Upload Profile Picture</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;
+        <label for="age">Age</label><br>
+        <input type="file" id="file" name="file" required>
+
+        <input type="number" id="age" name="age" required> <br><br>
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" id="bio" rows="4" cols="100"></textarea> <hr>
+
+        <button type="submit">Create</button>
+
+
+    </form>
+</body>
+</html>
