@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+    <p><big>Please Fill in your information and we will be sending your order in no time</big></p><br><br>
+    <form action="/submit" method="post">
+        <label for="yourname"><big>Your Name</big></label>
+        &emsp;&emsp;<input type="text" size="30" id="yourname" name="yourname" placeholder="First Name">
+        &emsp;<input type="text" size="30" id="yourname" name="yourname" placeholder="Last Name"><br><br>
+        <label for="email"><big>Your Email</big></label>
+        &emsp;&emsp;<input type="email" size="70" id="email" name="email" placeholder="e.g.hello@gmail.com" required><br><br>
+        <label for="phone"><big>Phone*</big></label>
+        &emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;<input type="number" id="phone" name="phone" placeholder="###" required>
+        &emsp;<input type="number" id="phone" name="phone" placeholder="###" required>
+        &emsp;<input type="number" id="phone" name="phone" placeholder="#######" required><br><br>
+        <label for="messagesubject"><big>Message subject*</big></label>
+        <select name="messagesubject" id="messagesubject">
+            <option value="Others">Others</option>
+            <option value="Regarding the course about JFS">Regarding the course about JFS</option>
+            <option value="Regarding about the placement">Regarding about the placement</option>
+        </select> <br><br>
+        <label for="message"><big>Message*</big></label>
+        &emsp;&emsp;&emsp;<textarea name="message" id="message" rows="5" cols="40"></textarea><br><br>
+        <label for=""><big>Verification*</big></label>
+        &emsp;&emsp;&emsp;<input type="checkbox" id="checkbox" name="checkbox required">
+        <label for="checkbox">I'm not a Robot</big></label><hr>
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
